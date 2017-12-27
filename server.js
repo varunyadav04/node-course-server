@@ -56,6 +56,13 @@ app.get('/about',(req,res)=>{
     pageTitle:"About Page"
   });
 });
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{
+    pageTitle:"Project Page",
+    pageBody:"This is project page"
+  });
+});
+
 app.listen(port, ()=>{
   console.log(`Server Connected to port ${port}`);
 });
